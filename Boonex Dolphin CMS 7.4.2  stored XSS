@@ -1,0 +1,29 @@
+Boonex Dolphin CMS 7.4.2 is vulnerable to stored XSS via the Page Builder "width" parameter.
+
+
+Description: Stored XSS, also known as persistent XSS, is more damaging than non-persistent XSS. It occurs when a malicious script is injected directly into a vulnerable web application.
+
+Vulnerable Parameter: width
+
+Affected Product: Dolphin
+
+Affected Version: 7.4.2
+
+Demo Installation: https://localhost/
+
+Payload: </script><script>alert(document.cookie)</script>
+
+
+Steps to Reproduce Bug:
+1- Login to Admin Panel
+2- Goto "Builders" => "Pages Builder" 
+3- Select any page
+4- Turn on Burp Suite Intercept and Change "other pages width" to "1081px</script><script>alert(document.cookie)</script>"
+
+XSS payload will be stored permanently.
+
+Video POC: https://drive.google.com/file/d/19JRds2qT-BjLAH-4WOdgzsLAUwhJjp1u/view?usp=sharing
+
+Impact:
+XSS can use to steal cookies, password or to run arbitrary code on a victim's browser
+
