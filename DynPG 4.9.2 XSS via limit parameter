@@ -4,7 +4,7 @@ A cross-site scripting (XSS) issue in the DynPG admin login panel version 4.9.2 
 ___
 XSS Payload: %27"--></style></scRipt><scRipt>alert(2)</scRipt>
 ___
-Vulnerable URI: limit
+Vulnerable Parameter: limit
 ___
 Steps to Reproduce the Issue:
 
