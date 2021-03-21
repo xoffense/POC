@@ -13,7 +13,7 @@ Steps to Reproduce the Issue:
 https://localhost/dynpg/backendpopup/popup.php?limit=3&orderby=3&page=%27"--></style></scRipt><scRipt>alert(3)</scRipt>&popUpResource=images&query=3&refID=3&returnCall=3&sort=3&valueID=3
 As you can see, XSS is triggered.
 
-Video POC: 
+Video POC: https://drive.google.com/file/d/1_7U-4ZOBlntbmsrIKzglx5wpJWeG2RWN/view?usp=sharing
 ___
 Impact
 With the help of xss attacker can perform social engineering on users by redirecting them from real website to fake one. Attacker can steal their cookies leading to account takeover and download a malware on their system, and there are many more attacking scenarios a skilled attacker can perform with xss.
