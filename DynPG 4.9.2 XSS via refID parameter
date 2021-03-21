@@ -4,7 +4,7 @@ A cross-site scripting (XSS) issue in the DynPG admin login panel version 4.9.2 
 ___
 XSS Payload: x"%20onmouseover=alert(4)%20x="
 ___
-Vulnerable URI: refID
+Vulnerable Parameter: refID
 ___
 Steps to Reproduce the Issue:
 
