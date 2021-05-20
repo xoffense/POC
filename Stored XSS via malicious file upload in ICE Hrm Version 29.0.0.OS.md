@@ -23,7 +23,8 @@ The file upload feature in ICE Hrm Version 29.0.0.OS allows remote attackers to 
 
 3- Visit the upload location of file and XSS will get triggered.
 
-# Video POC: https://drive.google.com/file/d/1SnMsIhOJKBq4Pnotgm0nw1Pz7TypPsoQ/view?usp=sharing
+# Video POC:
+https://drive.google.com/file/d/1SnMsIhOJKBq4Pnotgm0nw1Pz7TypPsoQ/view?usp=sharing
 
 # Impact
 XSS can use to steal cookies, password or to run arbitrary code on a victim's browser
