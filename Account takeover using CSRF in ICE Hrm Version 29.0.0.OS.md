@@ -2,7 +2,7 @@
 Rafal Lykowski & Piyush Patil
 
 # Description
-ICE Hrm Version 29.0.0.OS is vulnerable to CSRF which allows attackers to add admin account and change the password of a user leading to full account takeover.
+ICE Hrm Version 29.0.0.OS is vulnerable to CSRF which allows attacker to add new admin account or change the password leading to full account takeover.
 
 # Steps to reproduce the issue
 1- Login as victim 
