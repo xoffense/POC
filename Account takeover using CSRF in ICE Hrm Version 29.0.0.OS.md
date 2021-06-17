@@ -6,6 +6,7 @@ ICE Hrm Version 29.0.0.OS is vulnerable to CSRF which allows attacker to add new
 
 # Steps to reproduce the issue
 1- Login as victim 
+
 2- Open the CSRF malicious file which I have attached (csrf_POC.html)
 ```
 <html>
